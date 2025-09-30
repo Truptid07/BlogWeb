@@ -1,7 +1,7 @@
 services:
   # Backend API Service
   - type: web
-    name: blogweb-backend
+    name: blogwebui-backend
     env: node
     plan: free
     rootDir: backend
@@ -26,11 +26,11 @@ services:
 
   # Frontend Static Site
   - type: static
-    name: blogweb-frontend  
+    name: blogwebui-frontend  
     env: static
     plan: free
     rootDir: frontend
-    buildCommand: npm install && REACT_APP_API_URL=https://blogweb-backend.onrender.com/api npm run build
+    buildCommand: npm install && REACT_APP_API_URL=https://blogwebui-backend.onrender.com/api npm run build
     staticPublishPath: build
     routes:
       - type: rewrite
