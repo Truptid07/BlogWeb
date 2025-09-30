@@ -14,7 +14,7 @@ services:
       - key: PORT
         value: 10000
       - key: MONGODB_URI
-        value: mongodb+srv://sample:sample123@cluster0.emi78dg.mongodb.net/blogplatform?retryWrites=true&w=majority&appName=Cluster0
+        value: mongodb+srv://blogwebuser:BlogWeb2024!@cluster0.emi78dg.mongodb.net/blogplatform?retryWrites=true&w=majority&appName=Cluster0
       - key: JWT_SECRET
         value: 8f2a9c4d6b1e3f7a5c9d2e8f4a6b9c1d3e7f2a5c8d1e4f7a2c5d8e1f4a7b9c2e5f8a1d4e7f2a5c8d1e4f7a2c
       - key: CLOUDINARY_CLOUD_NAME
