@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import './styles/animations.css';
+
+/* Quill Editor Styles */
+.ql-editor {
+  min-height: 300px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.ql-toolbar {
+  border-top: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.ql-container {
+  border-bottom: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+  border-right: 1px solid #e5e7eb;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Loading animation */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
+
+/* Blog content styles */
+.blog-content {
+  @apply prose prose-lg max-w-none;
+}
+
+.blog-content h1 {
+  @apply text-3xl font-bold text-gray-900 mb-4;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-semibold text-gray-800 mb-3;
+}
+
+.blog-content h3 {
+  @apply text-xl font-medium text-gray-800 mb-2;
+}
+
+.blog-content p {
+  @apply text-gray-700 mb-4 leading-relaxed;
+}
+
+.blog-content a {
+  @apply text-primary-600 hover:text-primary-800 underline;
+}
+
+.blog-content ul, .blog-content ol {
+  @apply mb-4 pl-6;
+}
+
+.blog-content li {
+  @apply mb-2;
+}
+
+.blog-content blockquote {
+  @apply border-l-4 border-primary-500 pl-4 italic text-gray-700 bg-gray-50 py-2 my-4;
+}
+
+.blog-content code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm;
+}
+
+.blog-content pre {
+  @apply bg-gray-100 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.blog-content img {
+  @apply rounded-lg shadow-md w-full h-auto mb-4;
+}
