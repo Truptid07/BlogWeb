@@ -39,10 +39,10 @@ Your current deployment at `https://blogweb-1-rpu1.onrender.com` is failing beca
 3. Get connection string
 4. Add as `MONGODB_URI` environment variable to backend
 
-**Option B: Use Render's Sample MongoDB URI**
+**Option B: Use Your MongoDB Atlas URI (Ready to Use)**
 Add this to your backend environment variables:
 ```
-MONGODB_URI=mongodb+srv://sample:sample123@cluster0.mongodb.net/blogplatform?retryWrites=true&w=majority
+MONGODB_URI=mongodb+srv://sample:sample123@cluster0.emi78dg.mongodb.net/blogplatform?retryWrites=true&w=majority&appName=Cluster0
 ```
 
 ### Step 3: Update Frontend API URL

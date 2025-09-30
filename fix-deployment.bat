@@ -26,7 +26,7 @@ echo    JWT_SECRET=8f2a9c4d6b1e3f7a5c9d2e8f4a6b9c1d3e7f2a5c8d1e4f7a2c5d8e1f4a7b9
 echo    CLOUDINARY_CLOUD_NAME=blog
 echo    CLOUDINARY_API_KEY=761868572134681
 echo    CLOUDINARY_API_SECRET=TxShcWM1Xhq7GvZHKiwVWtQLcEM
-echo    MONGODB_URI=mongodb+srv://sample:sample123@cluster0.mongodb.net/blogplatform?retryWrites=true^&w=majority
+echo    MONGODB_URI=mongodb+srv://sample:sample123@cluster0.emi78dg.mongodb.net/blogplatform?retryWrites=true^&w=majority^&appName=Cluster0
 echo.
 echo 4. 🎨 Update your existing frontend service:
 echo    - Add Environment Variable:
